@@ -1,0 +1,66 @@
+
+.h {
+  &eader {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: $brown;
+    z-index: 99;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo-box {
+    width: 74px;
+    height: 60px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__nav {
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+
+      a {
+        font-family: $montserrat;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        color: $white;
+        transition: all  0.3s ease;
+        &.active,&:hover{
+          color: $main_color;
+        }
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .social__item {
+      width: 32px;
+      height: 32px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+}

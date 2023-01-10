@@ -1,0 +1,29 @@
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.section__title {
+  border-bottom: 1px solid;
+  border-color: transparent;
+  padding-bottom: 15px;
+  &.black {
+    border-color: #E2E0D9;
+    span{
+      color: $black;
+    }
+  }
+
+  span {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 150%;
+    color: $white;
+    padding-left: 16px;
+    border-left: 7px solid $main_color;
+  }
+}

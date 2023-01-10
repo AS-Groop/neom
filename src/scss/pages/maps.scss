@@ -1,0 +1,67 @@
+.maps {
+  &__section {
+    .section__title {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__content {
+    padding: 64px 0;
+
+    .form {
+      max-width: 600px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .btn {
+        margin-top: 16px;
+      }
+
+      &__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .title {
+          font-family: $montserrat;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 29px;
+          text-align: center;
+          color: $black;
+          margin-bottom: 16px;
+        }
+
+        .info {
+          font-family: $montserrat;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          text-align: center;
+          color: $black;
+          margin-bottom: 32px;
+        }
+      }
+
+      &__input {
+        margin-bottom: 16px;
+        width: 100%;
+      }
+    }
+  }
+
+  &__map {
+    width: 100%;
+    height: 600px;
+    margin-bottom: 64px;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

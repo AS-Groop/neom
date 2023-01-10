@@ -1,0 +1,26 @@
+.b-breadcrumbs
+    ._container._container
+        ._body
+            a(href="#")._element Главная
+            a(href="#")._element.-active Блог
+section.b-blog
+    ._container._container
+        ._content
+            h1._title.title Блог
+            .b-filters
+                span._filter(role="button" tabindex="0" ) Юриспруденция
+                span._filter(role="button" tabindex="0" ) Адвокатура
+                span._filter(role="button" tabindex="0" ) Инвестиции
+                span._filter(role="button" tabindex="0" ) Правосудие 
+            .b-articleGrid._body
+                - items = [0,1,2,3,4,5,0,1,2,3,4,5,0,1,2,3,4,5,0,1,2,3,4,5]
+                each item in items
+                    ._itemWrp
+                        ._itemBox.cardStyle
+                            h3._itemTitle.t2 Как правильно уволить директора?
+                            ._itemInfo
+                                ._itemDate 19.01.2018
+                                ._itemCategory Юриспруденция
+                            p._itemTxt.txt Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            a._btn(href='#')
+            ._btn.btn(role="button" tabindex="0") Загрузить еще&nbsp;<span class='load-num'>10</span>

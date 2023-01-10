@@ -1,0 +1,59 @@
+.statistic {
+  &__section {
+    min-height: 442px;
+    background-repeat: no-repeat;
+    background-size: 100%, 100% 100%;
+    background-position: bottom;
+    background-attachment: fixed;
+  }
+
+  &__content {
+    padding: 64px 0;
+    font-family: $montserrat;
+    color: $white;
+
+    .section__title{
+      margin-bottom: 32px;
+    }
+
+    .title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 16px;
+    }
+
+    .info {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 64px;
+    }
+  }
+  &__counter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &-item {
+      width: 280px;
+      text-align: center;
+      font-family: $montserrat;
+      color: $white;
+      .count{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 59px;
+        margin-bottom: 16px;
+      }
+      .text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+}

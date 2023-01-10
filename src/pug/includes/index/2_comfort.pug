@@ -1,0 +1,20 @@
+section.comfort__section
+    .container
+        .comfort__content
+            .comfort__items
+                - items = [{img:"icon_1",title:'Шумоизоляция',info:"Надежная защита от шума"},{img:"icon_2",title:'Тайм',info:"Долгие годы выдержки"},{img:"icon_3",title:'Профиль',info:"Профили качества вторичного сырья"},{img:"icon_4",title:'Надежное',info:"Надежное сотрудничество"}]
+                each item in items
+                    .comfort__item
+                        .icon
+                            img(src=require(`../../../img/icon/${item.img}.svg`))
+                        h4.title #{item.title}
+                        p.info #{item.info}
+            .comfort__slider
+                .comfort__slider-items
+                    -slider = ['img','img_1','img_2','img_3','img_4']
+                    each item in slider
+                        .comfort__slider-item
+                            img(src=require(`../../../img/slider/${item}.png`))
+                .comfort__slider-nav
+                    include  ../../../icons-sprite/nav-left.svg
+                    include ../../../icons-sprite/nav-right.svg

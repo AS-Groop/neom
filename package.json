@@ -1,0 +1,62 @@
+{
+  "name": "excell-course",
+  "version": "1.0.0",
+  "description": "JavaScript Excell Application",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --open",
+    "build": "cross-env NODE_ENV=production webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/as-groop/excell-course.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Js",
+    "Excell"
+  ],
+  "author": "Asadbek Sheraliyev <asadbek.sheraliyev07@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/as-groop/excell-course/issues"
+  },
+  "homepage": "https://github.com/as-groop/excell-course#readme",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/eslint-parser": "^7.5.4",
+    "@babel/preset-env": "^7.20.2",
+    "@webdiscus/pug-loader": "^2.10.0",
+    "apply": "^0.2.19",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^9.1.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.2",
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-loader": "^4.0.2",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.1",
+    "node-sass": "^8.0.0",
+    "pug": "^3.0.2",
+    "pug-loader": "^2.4.0",
+    "pug-plugin": "^4.8.0",
+    "sass": "^1.56.1",
+    "sass-loader": "^13.2.0",
+    "svg-sprite-loader": "^6.0.11",
+    "svgo-loader": "^3.0.3",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "normalize.css": "^8.0.1"
+  }
+}

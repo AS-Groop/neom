@@ -1,0 +1,34 @@
+.about {
+  &__section {
+    min-height: 800px;
+    background-color: $brown;
+    background-size: 100%, 45% 100%;
+    background-repeat: no-repeat;
+  }
+
+  &__content {
+    padding: 64px 0;
+  }
+
+  &__context{
+    width: 50%;
+    margin-left: auto;
+    .title{
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 150%;
+      margin-bottom: 32px;
+      font-family: $montserrat;
+      color: $white;
+    }
+    .description{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 170%;
+      font-family: $montserrat;
+      color: $white;
+    }
+  }
+}

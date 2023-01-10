@@ -1,0 +1,22 @@
+section.product__section
+    .container
+        .product__content
+            .section__title(class="black")
+                span Продукция
+            .product__main
+                .product__img
+                    img(src=require("../../../img/img/home.png"))
+                    img(src=require("../../../img/img/window.png"))
+                .product__navigation
+                    .facade(class="product__items")
+                        .product__items-inner
+                            h4 Окна:
+                            each item in [1,2,3,4,5]
+                                .product__item
+                                    img(src=require(`../../../img/windows/window-${item}.png`))
+                    .window(class="product__items")
+                        .product__items-inner
+                            h4 Фасад:
+                            each item in [1,2,3,4,5]
+                                .product__item
+                                    img(src=require(`../../../img/facsdes/facade-${item}.png`))
