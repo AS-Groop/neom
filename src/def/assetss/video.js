@@ -1,0 +1,1 @@
+import window from '../../video/window.mp4';

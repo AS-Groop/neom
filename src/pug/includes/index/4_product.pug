@@ -5,18 +5,18 @@ section.product__section
                 span Продукция
             .product__main
                 .product__img
-                    img(src=require("../../../img/img/home.png"))
-                    img(src=require("../../../img/img/window.png"))
+                    img(src="./images/home.png")
+                    img(src="./images/window.png")
                 .product__navigation
                     .facade(class="product__items")
                         .product__items-inner
                             h4 Окна:
                             each item in [1,2,3,4,5]
                                 .product__item
-                                    img(src=require(`../../../img/windows/window-${item}.png`))
+                                    img(src=`./images/window-${item}.png`)
                     .window(class="product__items")
                         .product__items-inner
                             h4 Фасад:
                             each item in [1,2,3,4,5]
                                 .product__item
-                                    img(src=require(`../../../img/facsdes/facade-${item}.png`))
+                                    img(src=`./images/facade-${item}.png`)

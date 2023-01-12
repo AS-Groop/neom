@@ -99,8 +99,20 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath:'images',
+            },
+          }
+        ]
       },
+      // {
+      //   test: /\.(png|jpg|jpeg|gif)$/i,
+      //   type: 'asset/resource',
+      // },
       {
         test: /\.(woff2?|eot|woff|ttf|otf)$/i,
         type: 'asset/resource',
