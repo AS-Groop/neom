@@ -30,3 +30,4 @@ import window from "../../img/img/window.png";
 
 
 import bg_about from "../../img/home/bg_about.jpg"
+import bg_staistic2 from "../../img/home/bg_staistic2.jpg"
