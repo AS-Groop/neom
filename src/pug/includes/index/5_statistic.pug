@@ -9,5 +9,5 @@ section.statistic__section(style=`background-image:linear-gradient(0deg, rgba(61
                 - statistic = [{count:3,text:'года на рынке'},{count:200,text:'сотрудников'},{count:65,text:'дилерских офисов'},{count:3500,text:'проектов'}]
                 each item in statistic
                     .statistic__counter-item
-                        h1.count #{item.count}+
+                        h1.count(data-val=item.count) 0+
                         p.text #{item.text}

@@ -1,3 +1,5 @@
-import '@/scss/index.scss'
 import './def/assetss/video'
 import './def/assetss/images'
+import '@/scss/index.scss'
+import './js/component'
+import './js/vendor/owl.carousel.min'

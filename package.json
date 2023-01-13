@@ -58,6 +58,9 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "cross-env": "^7.0.3",
-    "normalize.css": "^8.0.1"
+    "jquery": "^3.6.3",
+    "normalize.css": "^8.0.1",
+    "popper.js": "^1.16.1",
+    "swiper": "^8.4.5"
   }
 }
