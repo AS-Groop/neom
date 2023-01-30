@@ -13,3 +13,11 @@ function activeSection() {
 }
 
 window.addEventListener('scroll',activeSection)
+
+
+window.addEventListener('load', () => {
+  setTimeout(()=>{
+    document.body.style.overflow = 'auto';
+    document.querySelector('.win-loader').classList.remove('active')
+  },3000)
+});
