@@ -1,8 +1,13 @@
-import img from "../../img/slider/img.png"
+import img_0 from "../../img/slider/img_0.png"
 import img_1 from "../../img/slider/img_1.png"
 import img_3 from "../../img/slider/img_3.png"
 import img_4 from "../../img/slider/img_4.png"
 import img_2 from "../../img/slider/img_2.png"
+import img_5 from "../../img/slider/new2/img_5.png"
+import img_6 from "../../img/slider/new2/img_6.png"
+import img_7 from "../../img/slider/new2/img_7.png"
+import img_8 from "../../img/slider/new2/img_8.png"
+import img_9 from "../../img/slider/new2/img_9.png"
 
 
 // product slider

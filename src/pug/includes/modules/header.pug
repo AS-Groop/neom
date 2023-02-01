@@ -5,7 +5,7 @@ header.header
                 img(src=require("../../../icons-sprite/logo.svg"))
             nav.h__nav
                 ul.h__nav-list
-                  - items = ['О компании','Продукция','Статистика','Наши офисы']
+                  - items = ['Продукция','О компании','Статистика','Дилерская сеть']
                   each item, index in items
                           li.nav__list-item
                               a.h__link(href='#link'+index data-url='link' + index)= item

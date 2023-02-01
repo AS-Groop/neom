@@ -6,7 +6,7 @@ section.statistic__section(style=`background-image:linear-gradient(0deg, rgba(61
             h3.title Пластиковые профили высокого качества!
             p.info Мы упорно работаем каждый день, чтобы сделать жизнь наших клиентов лучше и счастливее
             .statistic__counter
-                - statistic = [{count:3,text:'года на рынке'},{count:200,text:'сотрудников'},{count:65,text:'дилерских офисов'},{count:3500,text:'проектов'}]
+                - statistic = [{count:1,text:'года на рынке'},{count:200,text:'сотрудников'},{count:65,text:'дилерских офисов'},{count:3500,text:'проектов'}]
                 each item in statistic
                     .statistic__counter-item
                         h1.count(data-val=item.count) 0+
