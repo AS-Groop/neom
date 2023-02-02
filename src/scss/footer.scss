@@ -2,21 +2,30 @@
   &__section {
     min-height: 325px;
     background-repeat: no-repeat;
-    background-size: 100%, 100% auto;
-    background-position: 0, 0 -350px;
+    @media (max-width: 1220px) {
+      background-size: 100%, cover;
+      background-position: 0, bottom;
+    }
   }
 
   &__content {
     padding: 64px 0;
+    @media (max-width: 550px) {
+      padding: 32px 0;
+    }
   }
 
   &__context {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 16px;
     max-width: 405px;
     margin-bottom: 32px;
+    @media (max-width: 550px) {
+      flex-direction: column;
+      max-width: 100%;
+    }
 
     .logo {
       width: 82px;
@@ -36,17 +45,29 @@
       font-size: 20px;
       line-height: 24px;
       color: $white;
+      @media (max-width: 550px) {
+        text-align: center;
+      }
     }
   }
   &__items {
     display: flex;
     justify-content: space-between;
     gap: 32px;
+    flex-wrap: wrap;
+    @media (max-width: 770px) {
+      flex-direction: column;
+    }
   }
   &__item {
     flex-grow: 1;
     display: flex;
     gap: 20px;
+    @media (max-width: 1220px) {
+      &.center{
+        justify-content: center;
+      }
+    }
     .logo{
       width: 32px;
       height: 32px;
@@ -75,6 +96,9 @@
     .social {
       display: flex;
       gap: 16px;
+      @media (max-width: 770px) {
+        justify-content: center;
+      }
       &__item {
         width: 32px;
         height: 32px;
