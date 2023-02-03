@@ -1,0 +1,32 @@
+.h__content
+    a.h__toggle
+        span
+        span
+        span
+    a.h__logo-box(href="#home")
+        img.desktop(src=require("../../../icons-sprite/logo.svg") loading="lazy")
+    nav.h__nav
+        ul.h__nav-list
+          - items = ['Продукция','О компании','Статистика','Дилерская сеть']
+          each item, index in items
+              li.nav__list-item
+                  a.h__link(href='#link'+index data-url='link' + index)= item
+    .h__nav-rigth
+        .h__social
+            a.social__item(href="https://www.facebook.com/profile.php?id=100086627416131")
+                include ../../../icons-sprite/facebook.svg
+            a.social__item(href="https://www.instagram.com/neom.uzb")
+                include ../../../icons-sprite/instagram.svg
+            a.social__item(href="https://t.me/MARKETERPR")
+                include ../../../icons-sprite/telegram.svg
+        .h__lang
+            .h__lang-content
+                a Рус
+                include ../../../icons-sprite/drop-arrov.svg
+            ul.h__lang-list
+                li
+                    a(href="#") Рус
+                li
+                    a(href="#") Узб
+                li
+                    a(href="#") Eng

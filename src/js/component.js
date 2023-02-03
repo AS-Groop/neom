@@ -38,10 +38,10 @@ jQuery(document).ready(function ($){
 
 
 
-let interval = 4000;
+
   let  boolCounter = true;
   // number counter animation
-  function counter (){
+  function counter (interval){
     $('.statistic__counter-item .count').each(function (i){
       const elm = $(this);
       let startValue = 0;
@@ -66,7 +66,7 @@ let interval = 4000;
   let callback = function(entries, observer) {
     /* Content excerpted, show below */
     if (entries[0].isIntersecting && boolCounter){
-      counter();
+      counter(4000);
       boolCounter = false;
     }
   };

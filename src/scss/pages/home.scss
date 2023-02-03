@@ -95,9 +95,21 @@
       font-weight: 500;
       font-size: 24px;
       line-height: 150%;
+      min-height: 72px;
       @media (max-width: 770px) {
         max-width: 400px;
         font-size: 20px;
+      }
+      .indicator{
+        margin-left: 4px;
+        border-right: 3px solid $white;
+        animation: indicator 0.8s infinite;
+      }
+
+      @keyframes indicator {
+        50%{
+          border-color: transparent;
+        }
       }
     }
   }

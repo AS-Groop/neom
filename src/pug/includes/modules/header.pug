@@ -1,18 +1,4 @@
-header.header
+header.header#header
     .container
-        .h__content
-            a.h__logo-box(href="#home")
-                img(src=require("../../../icons-sprite/logo.svg") loading="lazy")
-            nav.h__nav
-                ul.h__nav-list
-                  - items = ['Продукция','О компании','Статистика','Дилерская сеть']
-                  each item, index in items
-                          li.nav__list-item
-                              a.h__link(href='#link'+index data-url='link' + index)= item
-            .h__social
-                a.social__item
-                    include ../../../icons-sprite/facebook.svg
-                a.social__item
-                    include ../../../icons-sprite/instagram.svg
-                a.social__item
-                    include ../../../icons-sprite/telegram.svg
+        include headerDefault
+        include headerMobile
