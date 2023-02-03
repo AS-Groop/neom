@@ -68,11 +68,16 @@
     justify-content: space-between;
     &-mobile {
       height: 0;
-      display: flex;
+      display: none;
       align-items: center;
       flex-direction: column;
       overflow: hidden;
       transition: all 0.3s linear;
+
+      @media screen and (max-width: 920px) {
+        display: flex;
+      }
+
       &.open {
         height: auto;
         margin-bottom: 20px;
