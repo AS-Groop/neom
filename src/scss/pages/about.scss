@@ -4,24 +4,24 @@
     background-color: $brown;
     background-size: 100%, 45% 100%;
     background-repeat: no-repeat;
-    @media (max-width: 920px) {
+    @media screen and (max-width: 920px) {
       background-size: 100%, 375px;
       background-position: center, center top;
     }
-    @media (max-width: 550px) {
+    @media screen and (max-width: 550px) {
       background-size: 100%, 100%;
     }
-    @media (max-width: 375px) {
+    @media screen and (max-width: 375px) {
       background-size: 100%, 375px;
     }
   }
 
   &__content {
     padding: 64px 0;
-    @media (max-width: 1220px) {
+    @media screen and (max-width: 1220px) {
       padding: 40px 0;
     }
-    @media (max-width: 920px) {
+    @media screen and (max-width: 920px) {
       padding: 32px 0;
     }
   }
@@ -29,29 +29,29 @@
   &__context{
     width: 50%;
     margin-left: auto;
-    @media (max-width: 920px) {
+    @media screen and (max-width: 920px) {
       width: 100%;
       margin-top: 289px;
     }
-    @media (max-width: 770px) {
+    @media screen and (max-width: 770px) {
       text-align: center;
     }
-    @media (max-width: 550px) {
+    @media screen and (max-width: 550px) {
       margin-top: 410px;
     }
-    @media (max-width: 492px) {
+    @media screen and (max-width: 492px) {
       margin-top: 376px;
     }
-    @media (max-width: 466px) {
+    @media screen and (max-width: 466px) {
       margin-top: 355px;
     }
-    @media (max-width: 437px) {
+    @media screen and (max-width: 437px) {
       margin-top: 327px;
     }
-    @media (max-width: 405px) {
+    @media screen and (max-width: 405px) {
       margin-top: 300px;
     }
-    @media (max-width: 375px) {
+    @media screen and (max-width: 375px) {
       margin-top: 289px;
     }
     .title{
@@ -62,7 +62,7 @@
       margin-bottom: 32px;
       font-family: $montserrat;
       color: $white;
-      @media (max-width: 1220px) {
+      @media screen and (max-width: 1220px) {
         font-size: 20px;
       }
     }
@@ -75,7 +75,7 @@
       //text-indent: 50px;
       font-family: $montserrat;
       color: $white;
-      @media (max-width: 1220px) {
+      @media screen and (max-width: 1220px) {
         font-size: 16px;
       }
     }

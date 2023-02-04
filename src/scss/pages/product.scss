@@ -5,16 +5,31 @@
 
   &__content {
     padding: 64px 0;
-    @media (max-width: 920px) {
+    @media screen and (max-width: 920px) {
       padding: 32px 0;
     }
   }
 
   &__main {
-    margin-top: 64px;
     width: 100%;
+    max-width: 1300px;
     height: 600px;
     position: relative;
+    margin: auto auto 64px;
+    padding: 0 30px;
+
+    @media screen and (max-width: 1220px) {
+      height: 500px;
+    }
+
+    @media screen and (max-width: 920px) {
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
+
+    @media screen and (max-width: 770px) {
+    }
   }
 
   &__img {
@@ -22,13 +37,21 @@
     height: 100%;
 
     img {
-      width: 100%;
+      width: calc(100% - 60px);
       height: 100%;
       position: absolute;
       top: 0;
-      right: 0;
-      left: 0;
+      //right: 0;
+      //left: 0;
       bottom: 0;
+      @media screen and (max-width: 920px) {
+        position: initial;
+        width: 100%;
+        height: auto;
+        bottom: auto;
+        right: 0;
+        left: 0;
+      }
     }
   }
 
@@ -36,12 +59,22 @@
     position: absolute;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: calc(100% - 60px);
     height: 100%;
     top: 0;
-    right: 0;
-    left: 0;
+    //right: 0;
+    //left: 0;
     bottom: 0;
+    @media screen and (max-width: 920px) {
+      position: initial;
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      padding: 32px 12px;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(11px);
+      gap: 32px;
+    }
   }
 
   &__items {
@@ -53,10 +86,24 @@
     justify-content: center;
     align-items: center;
 
+    @media screen and (max-width: 920px) {
+      width: 100%;
+      height: auto;
+      background: transparent;
+      backdrop-filter: none;
+    }
+
     &-inner {
       display: flex;
       flex-direction: column;
       gap: 16px;
+      @media screen and (max-width: 920px) {
+        justify-content: space-around;
+        flex-direction: initial;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
       h4 {
         font-family: $montserrat;
         font-style: normal;
@@ -65,6 +112,10 @@
         line-height: 20px;
         text-align: center;
         color: $white;
+
+        @media screen and (max-width: 920px) {
+          width: 100%;
+        }
       }
     }
   }
@@ -80,6 +131,11 @@
     justify-content: center;
     transition: all 0.3s ease;
 
+    @media screen and (max-width: 920px) {
+      width: 66px;
+      height: 66px;
+    }
+
     img {
       width: 100%;
       height: 100%;
@@ -88,7 +144,7 @@
   }
 }
 
-.facade{
+.facade {
   .product {
     &__item {
       &:hover, &.active {
@@ -97,9 +153,10 @@
     }
   }
 }
-.window{
-  .product__item{
-    &:hover,&.active {
+
+.window {
+  .product__item {
+    &:hover, &.active {
       //background-color: $main_color;
       //img{
       //  width: 48px;
