@@ -7,7 +7,7 @@
         img.desktop(src=require("../../../icons-sprite/logo.svg") loading="lazy")
     nav.h__nav
         ul.h__nav-list
-          - items = ['Продукция','О компании','Статистика','Дилерская сеть']
+          - items = ['Products','About the company','Statistics','Dealer network']
           each item, index in items
               li.nav__list-item
                   a.h__link(href='#link'+index data-url='link' + index)= item
@@ -21,12 +21,12 @@
                 include ../../../icons-sprite/telegram.svg
         .h__lang
             .h__lang-content
-                a Рус
+                a Eng
                 include ../../../icons-sprite/drop-arrov.svg
             ul.h__lang-list
                 li
                     a(href="/") Рус
                 li
-                    a(href="/uz") Узб
+                    a(href="/uz") Uz
                 li
                     a(href="/en") Eng

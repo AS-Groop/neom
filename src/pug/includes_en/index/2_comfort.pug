@@ -2,7 +2,7 @@ section.comfort__section(id="link0")
     .container
         .comfort__content
             .comfort__items
-                - items = [{img:"icon_1",title:'Шумоизоляция',info:"Защита от уличного шума"},{img:"icon_2",title:'Выдержка',info:"Долговечность на долгие годы"},{img:"icon_3",title:'Защита',info:"10-летняя гарантия"},{img:"icon_4",title:'Правильный выбор',info:"Надежное сотрудничество"}]
+                - items = [{img:"icon_1",title:'Sound insulation',info:"Protection from street noise"},{img:"icon_2",title:'Durability',info:"Durability for many years"},{img:"icon_3",title:'Protection',info:"10-year warranty"},{img:"icon_4",title:'The right choice',info:"Reliable cooperation"}]
                 each item in items
                     .comfort__item
                         .icon
@@ -10,7 +10,7 @@ section.comfort__section(id="link0")
                         h4.title #{item.title}
                         p.info #{item.info}
             .section__title(class="black")
-                span Продукция
+                span Products
             .comfort__slider(class="owl-carousel owl-theme")
                 .comfort__slider-items.owl__slider-items
                     -slider = [0,1,2,3,4,5,6,7,8,9]

@@ -1,0 +1,9 @@
+.h__content-mobile
+    //a.h__logo-box(href="#home")
+    //    img(src=require("../../../icons-sprite/logo.svg") loading="lazy")
+    nav.h__nav-mobile
+        ul.h__nav-list-mobile
+          - items = ['Mahsulotlar','Kompaniya haqida','Statistika','Dilerlar nuqtalari']
+          each item, index in items
+              li.h__nav-list-item
+                  a.h__link(href='#link' + index data-url='link' + index)= item

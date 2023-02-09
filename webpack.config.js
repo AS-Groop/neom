@@ -57,8 +57,12 @@ module.exports = {
       filename: 'index.html',
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'src/pug/pages/index.pug'),
-      filename: 'ru.html',
+      template: path.join(__dirname, 'src/pug/pages/index_uz.pug'),
+      filename: 'uz/index.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'src/pug/pages/index_en.pug'),
+      filename: 'en/index.html',
     }),
     new CleanWebpackPlugin(),
     new CopyPlugin({

@@ -1,0 +1,16 @@
+section.statistic__section(style=`background-image:linear-gradient(0deg, rgba(61, 38, 13, 0.9), rgba(61, 38, 13, 0.9)),url('./images/bg_staistic2.jpg')` id="link2")
+    .container
+        .statistic__content
+            .section__title
+                span Statistika
+            h3.title Yuqori sifatli plastik profillar!
+            p.info Biz har kuni mijozlarimizning hayotini yanada yaxshi va baxtli qilish uchun astoydil harakat qilamiz
+            .statistic__counter
+                .statistic__counter-item
+                    h1.count(data-val="1") 1+
+                    p.text bozordagi yillar
+                - statistic = [{count:200,text:'xodimlar'},{count:65,text:'dilerlar nuqtalari'},{count:3500,text:'loyihalar'}]
+                each item in statistic
+                    .statistic__counter-item
+                        h1.count(data-val=item.count) 0+
+                        p.text #{item.text}

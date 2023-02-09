@@ -1,13 +1,13 @@
 jQuery(document).ready(function ($){
-  $('.comfort__slider-items').owlCarousel({
+  $('.owl__slider-items').owlCarousel({
     loop:true,
     margin:10,
     nav:false,
     slideBy:5,
     dots: false,
     autoplay:true,
-    autoplayTimeout:5000,
-    // autoplayHoverPause:true,
+    autoplayTimeout:7000,
+    autoplayHoverPause:true,
     responsive:{
       0:{
         items:5
@@ -20,7 +20,7 @@ jQuery(document).ready(function ($){
       }
     }
   })
-  let owl = $('.comfort__slider-items');
+  let owl = $('.owl__slider-items');
   owl.owlCarousel();
   $('.customPrevBtn').click(function() {
     owl.trigger('prev.owl.carousel');
@@ -74,3 +74,37 @@ jQuery(document).ready(function ($){
   let target = document.querySelector('.statistic__counter');
   observer.observe(target);
 })
+
+
+//
+// import Swiper, {Navigation, Autoplay, } from 'swiper';
+//
+// const swiper = new Swiper('.swiper', {
+//   modules:[Navigation, Autoplay],
+//   slidesPerView: 5,
+//   centeredSlides: false,
+//   slidesPerGroupSkip: 5,
+//   grabCursor: true,
+//   keyboard: {
+//     enabled: true,
+//   },
+//   loop: true,
+//   autoplay: {
+//     delay: 2500,
+//     pauseOnMouseEnter: true,
+//
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
+//
+//
+// document.querySelector('.swiper-button-next').addEventListener('click',(e)=>{
+//   swiper.autoplay.start()
+//   console.log(swiper);
+// })
+
+
+

@@ -1,0 +1,39 @@
+footer.footer__section(style=`background-image:linear-gradient(0deg, rgba(61, 38, 13, 0.9), rgba(61, 38, 13, 0.9)),url('./images/bg_staistic2.jpg');`)
+    .container
+        .footer__content
+            .footer__context
+                .logo
+                    img(src=require('../../../img/icon/icon_logo.svg') loading="lazy")
+                .info Innovative plastic windows and doors!
+            .footer__items
+                .footer__item
+                    .logo
+                        include ../../../icons-sprite/footer/icon_map.svg
+                    .info
+                        .title Address
+                        .text
+                            | Uzbekistan, Tashkent
+                            br
+                            | Mirzo-Ulugbek district, Dustlik street 3/8
+                .footer__item
+                    .logo
+                        include ../../../icons-sprite/footer/icon_map.svg
+                    .info
+                        .title Email
+                        .text info@neom.uz
+                .footer__item
+                    .logo
+                        include ../../../icons-sprite/footer/icon_map.svg
+                    .info
+                        .title Telephone
+                        .text +998 99 498 88 88
+                .footer__item.center
+                    .info
+                        .title Social Set
+                        .social
+                            a.social__item(href="https://www.facebook.com/profile.php?id=100086627416131")
+                                include ../../../icons-sprite/facebook.svg
+                            a.social__item(href="https://www.instagram.com/neom.uzb")
+                                include ../../../icons-sprite/instagram.svg
+                            a.social__item(href="https://t.me/MARKETERPR")
+                                include ../../../icons-sprite/telegram.svg

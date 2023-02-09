@@ -2,7 +2,7 @@ section.product__section(id="lin")
     .container
         .product__content
             .section__title(class="black")
-                span Выберите цвет окон
+                span Select window color
     .product__main
                 .product__img
                     img(src="./images/home.png"  loading="lazy")
@@ -10,13 +10,13 @@ section.product__section(id="lin")
                 .product__navigation
                     .facade(class="product__items")
                         .product__items-inner
-                            h4 Окна:
+                            h4 Window:
                             each item in [1,2,3,4,5]
                                 .product__item
                                     img(src=`./images/window-${item}.png` loading="lazy")
                     .window(class="product__items")
                         .product__items-inner
-                            h4 Фасад:
+                            h4 Facade:
                             each item in [1,2,3,4,5]
                                 .product__item
                                     img(src=`./images/facade-${item}.png` loading="lazy")

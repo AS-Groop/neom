@@ -1,3 +1,4 @@
+// import 'swiper/swiper.min.css';
 import './def/assetss/video'
 import './def/assetss/images'
 import '@/scss/index.scss'
