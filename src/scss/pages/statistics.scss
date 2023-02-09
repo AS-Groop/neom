@@ -5,6 +5,9 @@
     background-size: 100%, 100% 100%;
     background-position: bottom;
     background-attachment: fixed;
+    @media screen and (max-width: 920px) {
+      background-size: 100%, auto 100%;
+    }
   }
 
   &__content {

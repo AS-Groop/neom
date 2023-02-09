@@ -24,7 +24,7 @@ let typingText = (text, n, element)=>{
         typingStart('.typing-home');
       },3000)
     }
-  },150);
+  },100);
 }
 
 typingStart('.typing-home');
