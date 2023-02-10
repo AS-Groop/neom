@@ -37,5 +37,5 @@ import window from "../../img/img/window.png";
 import bg_about from "../../img/home/bg_about.jpg"
 import bg_staistic2 from "../../img/home/bg_staistic2.jpg"
 
-import owl_carousel_min from "../../owl-carousel/owl_carousel_min.css"
-import owl_theme_default from "../../owl-carousel/owl_theme_default.css"
+// import owl_carousel_min from "../../owl-carousel/owl_carousel_min.css"
+// import owl_theme_default from "../../owl-carousel/owl_theme_default.css"

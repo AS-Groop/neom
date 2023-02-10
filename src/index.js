@@ -1,4 +1,6 @@
 // import 'swiper/swiper.min.css';
+import  "./owl-carousel/owl_carousel_min.css"
+import  "./owl-carousel/owl_theme_default.css"
 import './def/assetss/video'
 import './def/assetss/images'
 import '@/scss/index.scss'

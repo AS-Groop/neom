@@ -5,7 +5,7 @@ section.product__section(id="lin")
                 span Select window color
     .product__main
                 .product__img
-                    img(src="./images/home.png"  loading="lazy")
+                    img(src="../images/home.png"  loading="lazy")
                     //img(src="./images/window.png")
                 .product__navigation
                     .facade(class="product__items")
@@ -13,10 +13,10 @@ section.product__section(id="lin")
                             h4 Window:
                             each item in [1,2,3,4,5]
                                 .product__item
-                                    img(src=`./images/window-${item}.png` loading="lazy")
+                                    img(src=`../images/window-${item}.png` loading="lazy")
                     .window(class="product__items")
                         .product__items-inner
                             h4 Facade:
                             each item in [1,2,3,4,5]
                                 .product__item
-                                    img(src=`./images/facade-${item}.png` loading="lazy")
+                                    img(src=`../images/facade-${item}.png` loading="lazy")
