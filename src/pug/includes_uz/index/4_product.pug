@@ -5,18 +5,22 @@ section.product__section(id="lin")
                 span Deraza rangini tanlang
     .product__main
                 .product__img
-                    img(src="../images/home.png"  loading="lazy")
-                    //img(src="./images/window.png")
+                    img.main_facade(src="../images/facade-1.jpg" data-type="en"  loading="lazy")
+                    img.main_win(src="../images/win_1.png" data-type="en" loading="lazy")
                 .product__navigation
-                    .facade(class="product__items")
-                        .product__items-inner
-                            h4 Окна:
-                            each item in [1,2,3,4,5]
-                                .product__item
-                                    img(src=`../images/window-${item}.png` loading="lazy")
                     .window(class="product__items")
                         .product__items-inner
-                            h4 Фасад:
-                            each item in [1,2,3,4,5]
-                                .product__item
-                                    img(src=`../images/facade-${item}.png` loading="lazy")
+                            h4 Oyna:
+                            .product__item.active(data-window='1')
+                                img(src=`../images/window-1.png` loading="lazy")
+                            each item in [2,3,4,5]
+                                .product__item(data-window=item)
+                                    img(src=`../images/window-${item}.png` loading="lazy")
+                    .facade(class="product__items")
+                        .product__items-inner
+                            h4 Fasad:
+                            .product__item.active(data-facade='1')
+                                img(src=`../images/facade-1-min.jpg` loading="lazy")
+                            each item in [5,2,3,4]
+                                .product__item(data-facade=item)
+                                    img(src=`../images/facade-${item}-min.jpg` loading="lazy")
